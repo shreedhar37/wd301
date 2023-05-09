@@ -1,10 +1,14 @@
+import "./TaskCard.css";
 const TaskCard = (props) => {
-  console.log(props);
   return (
-    <div>
-      <h2>{props.title}</h2>
-      <p>Completed on : due date... </p>
-      <p>Assignee: Shreedhar</p>
+    <div className="TaskItem">
+      <h2 className="text-xl font-bold">{props.title}</h2>
+      {props.dueDate ? (
+        <p>Due on: {props.dueDate}</p>
+      ) : (
+        <p>Completed on: {props.completedAtDate}</p>
+      )}
+      <p>Assignee: {props.assigneeName}</p>
     </div>
   );
 };
