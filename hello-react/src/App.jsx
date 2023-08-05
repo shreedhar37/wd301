@@ -23,13 +23,13 @@ function App() {
           <TaskCard
             title={"Sample todo"}
             dueDate={"5th Aug"}
-            assignee={"Shreedhar"}
+            assigneeName={"Shreedhar"}
             completedAtDate={false}
           />
           <TaskCard
             title={"Sample todo1"}
             dueDate={"6th Aug"}
-            assignee={"Siddharth"}
+            assigneeName={"Siddharth"}
             completedAtDate={false}
           />
           <p className="text-gray-600 font-semibold bg-gray-200 border-4 border-slate-50 rounded-md m-4 py-1">
@@ -46,13 +46,13 @@ function App() {
           <TaskCard
             title={"Sample todo3"}
             dueDate={"1st Aug"}
-            assignee={"Shreedhar"}
+            assigneeName={"Shreedhar"}
             completedAtDate={true}
           />
           <TaskCard
             title={"Sample todo4"}
             dueDate={"2nd Aug"}
-            assignee={"Siddharth"}
+            assigneeName={"Siddharth"}
             completedAtDate={true}
           />
         </div>
