@@ -17,7 +17,7 @@ function App() {
         <div className="card border-2 border-black  rounded-lg w-[500px]">
           <div className="my-1 p-2">
             <h2 className="text-center font-bold text-xl text-gray-600 mb-2">
-              Pending
+              pending
             </h2>
           </div>
           <TaskCard
@@ -38,7 +38,7 @@ function App() {
         <div className="card border-2 border-black  rounded-lg w-[500px] ml-12">
           <div className="my-1 p-2">
             <h2 className="text-center font-bold text-xl text-gray-600 mb-2">
-              Done
+              done
             </h2>
           </div>
           <TaskCard
