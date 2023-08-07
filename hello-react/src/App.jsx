@@ -21,16 +21,16 @@ function App() {
             </h2>
           </div>
           <TaskCard
-            title="Sample todo"
-            dueDate="5th Aug"
-            assigneeName="Shreedhar"
+            title="Build a website with static content"
+            dueDate="10th April"
+            assigneeName="Rohit S"
           />
           <TaskCard
-            title="Sample todo1"
-            dueDate="6th Aug"
-            assigneeName="Siddharth"
+            title="Add a blog"
+            dueDate="22nd March"
+            assigneeName="Rohit M"
           />
-          <p className="text-gray-600 font-semibold bg-gray-200 border-4 border-slate-50 rounded-md m-4 py-1">
+          <p className="text-gray-600 font-semibold bg-gray-200 border-4 border-slate-50 rounded-md m-4 py-1 px-2">
             + New task
           </p>
         </div>
@@ -42,14 +42,14 @@ function App() {
             </h2>
           </div>
           <TaskCard
-            title="Sample todo3"
-            completedAtDate="1st Aug"
-            assigneeName="Shreedhar"
+            title="Design the mockup"
+            completedAtDate="10th April"
+            assigneeName="Rohit M"
           />
           <TaskCard
-            title="Sample todo4"
-            completedAtDate="2nd Aug"
-            assigneeName="Siddharth"
+            title="Get the approval from principal"
+            completedAtDate="20th April"
+            assigneeName="Ajay S"
           />
         </div>
       </div>
