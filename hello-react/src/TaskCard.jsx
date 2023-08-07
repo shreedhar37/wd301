@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./TaskCard.css";
 
 const TaskCard = (props) => {

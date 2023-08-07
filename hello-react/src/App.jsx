@@ -21,14 +21,14 @@ function App() {
             </h2>
           </div>
           <TaskCard
-            title={"Sample todo"}
-            dueDate={"5th Aug"}
-            assigneeName={"Shreedhar"}
+            title="Sample todo"
+            dueDate="5th Aug"
+            assigneeName="Shreedhar"
           />
           <TaskCard
-            title={"Sample todo1"}
-            dueDate={"6th Aug"}
-            assigneeName={"Siddharth"}
+            title="Sample todo1"
+            dueDate="6th Aug"
+            assigneeName="Siddharth"
           />
           <p className="text-gray-600 font-semibold bg-gray-200 border-4 border-slate-50 rounded-md m-4 py-1">
             + New task
@@ -42,14 +42,14 @@ function App() {
             </h2>
           </div>
           <TaskCard
-            title={"Sample todo3"}
-            completedAtDate={"1st Aug"}
-            assigneeName={"Shreedhar"}
+            title="Sample todo3"
+            completedAtDate="1st Aug"
+            assigneeName="Shreedhar"
           />
           <TaskCard
-            title={"Sample todo4"}
-            completedAtDate={"2nd Aug"}
-            assigneeName={"Siddharth"}
+            title="Sample todo4"
+            completedAtDate="2nd Aug"
+            assigneeName="Siddharth"
           />
         </div>
       </div>
