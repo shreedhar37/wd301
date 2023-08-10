@@ -5,19 +5,32 @@ import { useLocalStorage } from "./hooks/useLocalStorage";
 
 
 interface TaskAppState {
-  tasks: TaskItem[];
+  tasks: TaskItem[],
+
 }
 const TaskApp = () => {
   const [taskAppState, setTaskAppState] = useLocalStorage<TaskAppState>("tasks", {
     tasks: [],
   });
 
-  
 
-  
+
+
   const addTask = (task: TaskItem) => {
     setTaskAppState({ tasks: [...taskAppState.tasks, task] });
   };
+
+  const deleteTaskItem = (id: number) => {
+
+    // console.log(id)
+
+    taskAppState.tasks.splice(id, 1)
+
+    //   console.log(taskAppState.tasks)
+
+    setTaskAppState({ tasks: [...taskAppState.tasks] })
+  }
+
   return (
     <div className="container py-10 max-w-4xl mx-auto">
       <h1 className="text-3xl mb-2 font-bold text-slate-700">
@@ -33,7 +46,7 @@ const TaskApp = () => {
             Pending
           </h1>
           <TaskForm addTask={addTask} />
-          <TaskList tasks={taskAppState.tasks} />
+          <TaskList deleteTaskItem={deleteTaskItem} tasks={taskAppState.tasks} />
         </div>
       </div>
     </div>

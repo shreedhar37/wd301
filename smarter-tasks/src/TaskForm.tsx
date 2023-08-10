@@ -2,14 +2,14 @@ import React from "react";
 
 import { TaskItem } from "./types";
 
-interface TaskFormProps{
-    addTask: (task: TaskItem) => void;
+interface TaskFormProps {
+  addTask: (task: TaskItem) => void;
 }
 
-interface TaskFormState{
- title: string,
- dueDate: string,
- description: string
+interface TaskFormState {
+  title: string,
+  dueDate: string,
+  description: string
 }
 
 
@@ -23,25 +23,25 @@ const TaskForm = (props: TaskFormProps) => {
     dueDate: "",
   });
 
-  
+
   const titleChanged: React.ChangeEventHandler<HTMLInputElement> = (event) => {
-    console.log(`${event.target.value}`);
+    //console.log(`${event.target.value}`);
     setFormState({ ...formState, title: event.target.value });
   };
 
   const dueDateChanged: React.ChangeEventHandler<HTMLInputElement> = (event) => {
-    console.log(`${event.target.value}`);
+    //console.log(`${event.target.value}`);
     setFormState({ ...formState, dueDate: event.target.value });
   };
 
   const descriptionChanged: React.ChangeEventHandler<HTMLInputElement> = (event) => {
-    console.log(`${event.target.value}`);
+    // console.log(`${event.target.value}`);
     setFormState({ ...formState, description: event.target.value });
   };
 
   const addTask: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
-    console.log(`Submitted the form with`);
+    //console.log(`Submitted the form with`);
     if (formState.title.length === 0 || formState.dueDate.length === 0) {
       return;
     }

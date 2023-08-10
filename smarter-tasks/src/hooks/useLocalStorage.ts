@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+
+
 const getStoredValue = <Type>(key: string, defaultValue: Type): Type => {
   const savedItem = localStorage.getItem(key);
   if (savedItem) {
