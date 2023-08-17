@@ -5,19 +5,21 @@ import { TaskItem } from "./types";
 interface Props {
 
   tasks: TaskItem[]
-  deleteTaskItem: (id: number) => void
+  removeTask: (id: number) => void
 
 }
 
 const TaskList = (props: Props) => {
-  return props.tasks.map((task, idx) => (
+
+  const { tasks, removeTask } = props
+
+  return tasks.map((task, idx) => (
     <li className="list-none">
       <Task
-        key={task.title}
-        title={task.title}
-        description={task.description}
-        dueDate={task.dueDate}
-        deleteTaskItem={() => { props.deleteTaskItem(idx) }}
+        key={idx}
+        task={task}
+        id={idx.toString()}
+        removeTask={() => removeTask(idx)}
       />
     </li>
   ));
