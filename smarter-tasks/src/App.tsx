@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to="/signin" replace />,
-    errorElement: <NotFound />
+    errorElement: <Navigate to="/notfound" />
   },
   {
     path: "/signin",
@@ -41,7 +41,6 @@ const router = createBrowserRouter([
         element: <TaskDetailsPage />,
       },
     ],
-    errorElement: <NotFound />
 
   },
   {
